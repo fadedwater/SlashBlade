@@ -23,7 +23,7 @@ public class ModelRegister {
     public ModelRegister() {
         MinecraftForge.EVENT_BUS.register(this);
 
-        ModelLoader.setCustomModelResourceLocation(SlashBlade.weapon, 0, modelLoc);
+        ModelLoader.setCustomModelResourceLocation(SlashBlade.tool, 0, modelLoc);
         ModelLoader.setCustomModelResourceLocation(SlashBlade.bladeWood, 0, modelLoc);
         ModelLoader.setCustomModelResourceLocation(SlashBlade.bladeBambooLight, 0, modelLoc);
         ModelLoader.setCustomModelResourceLocation(SlashBlade.bladeSilverBambooLight, 0, modelLoc);
@@ -31,7 +31,7 @@ public class ModelRegister {
         ModelLoader.setCustomModelResourceLocation(SlashBlade.wrapBlade, 0, modelLoc);
         ModelLoader.setCustomModelResourceLocation(SlashBlade.bladeNamed, 0, modelLoc);
 
-        ForgeHooksClient.registerTESRItemStack(SlashBlade.weapon, 0, DummyTileEntity.class);
+        ForgeHooksClient.registerTESRItemStack(SlashBlade.tool, 0, DummyTileEntity.class);
         ForgeHooksClient.registerTESRItemStack(SlashBlade.bladeWood, 0, DummyTileEntity.class);
         ForgeHooksClient.registerTESRItemStack(SlashBlade.bladeBambooLight, 0, DummyTileEntity.class);
         ForgeHooksClient.registerTESRItemStack(SlashBlade.bladeSilverBambooLight, 0, DummyTileEntity.class);

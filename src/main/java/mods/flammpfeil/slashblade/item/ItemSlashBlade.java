@@ -756,8 +756,8 @@ public class ItemSlashBlade extends ItemSword {
 
         if (equipmentSlot == EntityEquipmentSlot.MAINHAND)
         {
-            multimap.put(SharedMonsterAttributes.ATTACK_DAMAGE.getName(), new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "Weapon modifier", (double)defaultBaseAttackModifier, 0));
-            multimap.put(SharedMonsterAttributes.ATTACK_SPEED.getName(), new AttributeModifier(ATTACK_SPEED_MODIFIER, "Weapon modifier", -2.4000000953674316D, 0));
+            multimap.put(SharedMonsterAttributes.ATTACK_DAMAGE.getName(), new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "tool modifier", (double)defaultBaseAttackModifier, 0));
+            multimap.put(SharedMonsterAttributes.ATTACK_SPEED.getName(), new AttributeModifier(ATTACK_SPEED_MODIFIER, "tool modifier", -2.4000000953674316D, 0));
         }
 
         return multimap;
@@ -1790,12 +1790,12 @@ public class ItemSlashBlade extends ItemSword {
             attrTag.add(
                     getAttrTag(
                             SharedMonsterAttributes.ATTACK_DAMAGE.getName()
-                            , new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "Weapon modifier", (double)(attackAmplifier + baseModif), 0)
+                            , new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "tool modifier", (double)(attackAmplifier + baseModif), 0)
                             , EntityEquipmentSlot.MAINHAND)
             );
             attrTag.add(
                     getAttrTag(SharedMonsterAttributes.ATTACK_SPEED.getName()
-                            , new AttributeModifier(ATTACK_SPEED_MODIFIER, "Weapon modifier", 0.0D, 0)
+                            , new AttributeModifier(ATTACK_SPEED_MODIFIER, "tool modifier", 0.0D, 0)
                             , EntityEquipmentSlot.MAINHAND)
             );
 
@@ -2594,17 +2594,17 @@ public class ItemSlashBlade extends ItemSword {
 
         if (!(Keyboard.isKeyDown(Keyboard.KEY_LSHIFT) || Keyboard.isKeyDown(Keyboard.KEY_RSHIFT))) {
             lines.add(
-                    "§7" +  I18n.format("flammpfeil.sweapon.info.hold") + " " + "§e" + "§o" + I18n.format("flammpfeil.sweapon.info.shift") + " " + "§r" + "§7"
-                            + I18n.format("flammpfeil.sweapon.info.forDetails") + "§r");
+                    "§7" +  I18n.format("flammpfeil.stool.info.hold") + " " + "§e" + "§o" + I18n.format("flammpfeil.stool.info.shift") + " " + "§r" + "§7"
+                            + I18n.format("flammpfeil.stool.info.forDetails") + "§r");
         }else{
-            lines.add(I18n.format("flammpfeil.sweapon.info.energy") + ":" + String.format("%,3.1fK/%,3.1fK",storage.getEnergyStored() / 1000.0,storage.getMaxEnergyStored() / 1000.0));
+            lines.add(I18n.format("flammpfeil.stool.info.energy") + ":" + String.format("%,3.1fK/%,3.1fK",storage.getEnergyStored() / 1000.0,storage.getMaxEnergyStored() / 1000.0));
 
             int level = getSpecialEffect(stack).getInt(SpecialEffects.HFCustom.getEffectKey());
             if (0 < level) {
                 if(HFCustom.isEmpowered(stack)){
-                    lines.add(I18n.format("flammpfeil.sweapon.info.hfeffect.trunoff"));
+                    lines.add(I18n.format("flammpfeil.stool.info.hfeffect.trunoff"));
                 } else {
-                    lines.add(I18n.format("flammpfeil.sweapon.info.hfeffect.trunon"));
+                    lines.add(I18n.format("flammpfeil.stool.info.hfeffect.trunon"));
                 }
             }
         }

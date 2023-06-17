@@ -269,7 +269,7 @@ public class ItemProudSoul extends Item {
         NBTTagCompound tag = ItemSlashBlade.getItemTagCompound(par1ItemStack);
 
         if(ItemSlashBlade.SpecialAttackType.exists(tag)){
-            String key = "flammpfeil.slashblade.specialattack." + SlashBlade.weapon.getSpecialAttack(par1ItemStack).toString();
+            String key = "flammpfeil.slashblade.specialattack." + SlashBlade.tool.getSpecialAttack(par1ItemStack).toString();
 
             par3List.add(String.format("SA:%s",  I18n.translateToLocal(key)));
         }

@@ -24,9 +24,9 @@ public class RecipeAdjustPos extends ShapedRecipe
     {
         super(SlashBlade.modid + ":adjust" ,3, 3, NonNullList.<Ingredient>from(Ingredient.EMPTY,
                 Ingredient.EMPTY, dirIS("Up"), dirIS("Front"),
-                dirIS("Left"), Ingredient.fromStacks(new ItemStack(SlashBlade.weapon, 1)), dirIS("Right"),
+                dirIS("Left"), Ingredient.fromStacks(new ItemStack(SlashBlade.tool, 1)), dirIS("Right"),
                 dirIS("Back"), dirIS("Down"), Ingredient.EMPTY)
-        , new ItemStack(SlashBlade.weapon, 1));
+        , new ItemStack(SlashBlade.tool, 1));
     }
 
     public boolean isFactor(ItemStack itemStack){

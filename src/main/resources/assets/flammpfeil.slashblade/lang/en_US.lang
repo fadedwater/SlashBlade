@@ -22,13 +22,13 @@ flammpfeil.swaepon.info.bewitched=bewitched
 flammpfeil.swaepon.info.magic=enchanted
 flammpfeil.swaepon.info.noname=sealed
 
-flammpfeil.sweapon.info.hold=Hold
-flammpfeil.sweapon.info.shift=Shift
-flammpfeil.sweapon.info.forDetails=for Details
-flammpfeil.sweapon.info.energy=Energy
+flammpfeil.stool.info.hold=Hold
+flammpfeil.stool.info.shift=Shift
+flammpfeil.stool.info.forDetails=for Details
+flammpfeil.stool.info.energy=Energy
 
-flammpfeil.sweapon.info.hfeffect.trunon=turn on : press QT+SA key
-flammpfeil.sweapon.info.hfeffect.trunoff=turn off : press Sneak+QT+SA key
+flammpfeil.stool.info.hfeffect.trunon=turn on : press QT+SA key
+flammpfeil.stool.info.hfeffect.trunoff=turn off : press Sneak+QT+SA key
 
 flammpfeil.swaepon.info.notowner.msg=§8You are not worthy as my master.
 flammpfeil.swaepon.info.needlevel.msg=§8You need more experience. Requirements level:%1$s
@@ -223,11 +223,11 @@ achievement.flammpfeil.slashblade.wrap.BambooMod.katana.pos=9, 6
 achievement.flammpfeil.slashblade.fox.white.pos=11, 5
 achievement.flammpfeil.slashblade.fox.black.pos=11, 7
 
-achievement.flammpfeil.slashblade.wrap.weaponmod.katana.wood.pos=7, 7
-achievement.flammpfeil.slashblade.wrap.weaponmod.katana.stone.pos=8, 8
-achievement.flammpfeil.slashblade.wrap.weaponmod.katana.iron.pos=9, 9
-achievement.flammpfeil.slashblade.wrap.weaponmod.katana.diamond.pos=10, 10
-achievement.flammpfeil.slashblade.wrap.weaponmod.katana.gold.pos=11, 11
+achievement.flammpfeil.slashblade.wrap.toolmod.katana.wood.pos=7, 7
+achievement.flammpfeil.slashblade.wrap.toolmod.katana.stone.pos=8, 8
+achievement.flammpfeil.slashblade.wrap.toolmod.katana.iron.pos=9, 9
+achievement.flammpfeil.slashblade.wrap.toolmod.katana.diamond.pos=10, 10
+achievement.flammpfeil.slashblade.wrap.toolmod.katana.gold.pos=11, 11
 
 achievement.flammpfeil.slashblade.wrap.Wa.katana.pos=8, 12
 achievement.flammpfeil.slashblade.wrap.Wa.tachi.pos=9, 13

@@ -22,11 +22,11 @@ public class RecipeInstantRepair extends ShapedOreRecipe
 
     public RecipeInstantRepair()
     {
-        super(new ResourceLocation(SlashBlade.modid,"recipexxsx"), new ItemStack(SlashBlade.weapon, 1, 0),
+        super(new ResourceLocation(SlashBlade.modid,"recipexxsx"), new ItemStack(SlashBlade.tool, 1, 0),
                 " X",
                 "B ",
                 'X',"cobblestone",
-                'B',new ItemStack(SlashBlade.weapon, 1, 0));
+                'B',new ItemStack(SlashBlade.tool, 1, 0));
     }
 
     public static boolean containsMatch(boolean strict, List<ItemStack> inputs, ItemStack... targets)

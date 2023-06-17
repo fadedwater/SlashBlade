@@ -46,7 +46,7 @@ public class Tukumo {
             ItemSlashBladeNamed.NamedBlades.add(name);
 
             {
-                ItemStack custombladeReqired = new ItemStack(SlashBlade.weapon,1,0);
+                ItemStack custombladeReqired = new ItemStack(SlashBlade.tool,1,0);
 
                 NBTTagCompound tagReqired = new NBTTagCompound();
                 custombladeReqired.setTagCompound(tagReqired);

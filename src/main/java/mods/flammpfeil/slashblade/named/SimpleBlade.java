@@ -152,7 +152,7 @@ public class SimpleBlade {
 
         SlashBlade.addRecipe("slashblade",
                 new RecipeUpgradeBlade(new ResourceLocation(SlashBlade.modid,"slashblade"),
-                        new ItemStack(SlashBlade.weapon),
+                        new ItemStack(SlashBlade.tool),
                 " BI",
                 "L#C",
                 "SG ",
@@ -166,7 +166,7 @@ public class SimpleBlade {
         ));
 
         {
-            ItemStack customblade = new ItemStack(SlashBlade.weapon);
+            ItemStack customblade = new ItemStack(SlashBlade.tool);
             NBTTagCompound tag = ItemSlashBlade.getItemTagCompound(customblade);
 
             SpecialEffects.addEffect(customblade,SpecialEffects.BlastEdge);
@@ -180,7 +180,7 @@ public class SimpleBlade {
         }
 
         {
-            ItemStack customblade = new ItemStack(SlashBlade.weapon);
+            ItemStack customblade = new ItemStack(SlashBlade.tool);
             NBTTagCompound tag = ItemSlashBlade.getItemTagCompound(customblade);
 
             SpecialEffects.addEffect(customblade,SpecialEffects.HFCustom);
@@ -193,7 +193,7 @@ public class SimpleBlade {
 
         }
         {
-            ItemStack customblade = new ItemStack(SlashBlade.weapon);
+            ItemStack customblade = new ItemStack(SlashBlade.tool);
             NBTTagCompound tag = ItemSlashBlade.getItemTagCompound(customblade);
 
             SpecialEffects.addEffect(customblade,SpecialEffects.HFCustom);

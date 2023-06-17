@@ -94,7 +94,7 @@ public class SlashBlade{
 
 	public static final String BrokenBladeWhiteStr = "BrokenBladeWhite";
 
-	public static ItemSlashBlade weapon;
+	public static ItemSlashBlade tool;
 	public static ItemSlashBladeDetune bladeWood;
 	public static ItemSlashBladeDetune bladeBambooLight;
 	public static ItemSlashBladeDetune bladeSilverBambooLight;
@@ -294,14 +294,14 @@ public class SlashBlade{
         //==================================================================================================================================
 
         (new Item.Properties()).setTEISR(() -> () -> )
-		weapon = (ItemSlashBlade)(new ItemSlashBlade(ToolMaterial.IRON, 4 + ToolMaterial.DIAMOND.getAttackDamage()))
+		tool = (ItemSlashBlade)(new ItemSlashBlade(ToolMaterial.IRON, 4 + ToolMaterial.DIAMOND.getAttackDamage()))
 				.setRepairMaterial(new ItemStack(Items.IRON_INGOT))
 				.setRepairMaterialOreDic("ingotSteel", "nuggetSteel")
 				.setUnlocalizedName("flammpfeil.slashblade")
 				.setCreativeTab(tab)
                 .setRegistryName("slashblade");
 
-        ForgeRegistries.ITEMS.register(weapon);
+        ForgeRegistries.ITEMS.register(tool);
 
         //==================================================================================================================================
 
@@ -517,13 +517,13 @@ public class SlashBlade{
         //MinecraftForge.EVENT_BUS.register(statManager);
 
         /*
-        statManager.registerItemStat(weapon, weapon, "SlashBlade");
-        statManager.registerItemStat(bladeWood, weapon, "SlashBlade");
-        statManager.registerItemStat(bladeBambooLight, weapon, "SlashBlade");
-        statManager.registerItemStat(bladeSilverBambooLight, weapon, "SlashBlade");
-        statManager.registerItemStat(bladeWhiteSheath, weapon, "SlashBlade");
-        statManager.registerItemStat(wrapBlade, weapon, "SlashBlade");
-        statManager.registerItemStat(bladeNamed, weapon, "SlashBlade");
+        statManager.registerItemStat(tool, tool, "SlashBlade");
+        statManager.registerItemStat(bladeWood, tool, "SlashBlade");
+        statManager.registerItemStat(bladeBambooLight, tool, "SlashBlade");
+        statManager.registerItemStat(bladeSilverBambooLight, tool, "SlashBlade");
+        statManager.registerItemStat(bladeWhiteSheath, tool, "SlashBlade");
+        statManager.registerItemStat(wrapBlade, tool, "SlashBlade");
+        statManager.registerItemStat(bladeNamed, tool, "SlashBlade");
 */
 
         InitEventBus.post(new LoadEvent.InitEvent(evt));

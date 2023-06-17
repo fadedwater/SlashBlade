@@ -59,7 +59,7 @@ public class CoreProxyClient extends CoreProxy  {
         MinecraftForge.EVENT_BUS.register(new LockonCircleRender());
 
 		/*
-        MinecraftForgeClient.registerItemRenderer(SlashBlade.weapon, renderer);
+        MinecraftForgeClient.registerItemRenderer(SlashBlade.tool, renderer);
 		MinecraftForgeClient.registerItemRenderer(SlashBlade.bladeWood, renderer);
 		MinecraftForgeClient.registerItemRenderer(SlashBlade.bladeBambooLight, renderer);
 		MinecraftForgeClient.registerItemRenderer(SlashBlade.bladeSilverBambooLight, renderer);
